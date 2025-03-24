@@ -5,6 +5,7 @@ import pandas as pd
 import requests
 import snowflake.connector
 import streamlit as st
+import snowflake 
 
 
 
@@ -17,7 +18,7 @@ STAGE = "BEVERAGE_DATA_STAGE"
 FILE = "beverage_order_model.yaml"
 
 if 'CONN' not in st.session_state or st.session_state.CONN is None:
-    st.session_state.CONN = snowflake.connector.connect(
+    st.session_state.CONN = .connector.connect(
         user="DKUMARJAYAKUMAR",
         password="Dkumarjayakumar@11223344",
         account="KUB07435",
